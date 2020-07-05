@@ -137,9 +137,16 @@ p{
   width: 20%;
   float: left;
 }
+.box-project, .box-cv{
+  padding: 0.01em 16px;
+}
 
-@media(min-width:601px){
-  .content-left{width: 25%;}
+.box-project:hover, .box-cv:hover{
+  background-color: #009688;
+}
+
+@media(min-width:600px){
+  .content-left, .content-right{width: 20%;}
 }
 
 @media(min-width:601px){
@@ -151,3 +158,5 @@ p{
 
   .content-mid, .content-right{margin-top: 10px; margin-left: -10px;}
 }
+
+@media screen and (max-width:)
