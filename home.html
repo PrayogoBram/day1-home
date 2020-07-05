@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="C:\Users\asus\Desktop\Challenge\day1-home\styles.css">
+    <title>BramHub</title>
+  </head>
+  <body>
+    <div class="content" style="max-width:1400px;margin-top:40px">
+
+      <!---Left Column------->
+      <div class="content-left">
+        <div class="box-profile box-shadow">
+          <h3>BramHub</h3>
+          <p><img src="img/foto3.png" style="height:106px;width:106px" alt="Avatar"></p>
+          <hr>
+        </div>
+
+        <div class="box-interest box-shadow" style="margin-top:10px;">
+          <h4>Interest</h4>
+          <p>
+            <span class="color1">Aviation</span>
+            <span class="color2">Engineering</span>
+            <span class="color3">BigData</span>
+            <span class="color4">Analyst</span>
+            <span class="color5">WebDesign</span>
+          </p>
+        </div>
+
+        <div class="contact box-shadow" style="margin-top:10px;">
+          <h4>Contact Me!</h4>
+          <div class="icon">
+              <a href="https://github.com/PrayogoBram"><img src="img/github.png" style="height:25px;float:left;padding-right:3px;" alt="GitHub"></a>
+          </div>
+
+          <a class="icon" href="https://www.linkedin.com/in/prayogo-bramantya/"><img src="img/in.png" style="height:25px;float:left;padding-right:3px" alt="Linkedin"></a>
+          <br>
+          <br>
+
+        </div>
+      </div>
+
+      <!---Middle Column------->
+      <div class="content-mid">
+        <div class="new-project box-shadow">
+          <div class="slide1 myslides">
+            <div class="ani-text">
+              <span>Slides 1</span>
+            </div>
+            <img src="slides/slide1.jpg" style="width:100%" alt="">
+          </div>
+
+          <div class="slide1 myslides">
+            <div class="ani-text">
+              <span>Slides 2</span>
+            </div>
+            <img src="slides/slide2.jpg" style="width:100%" alt="">
+          </div>
+
+          <div class="slide3 myslides">
+            <div class="ani-text">
+              <span>Slides 3</span>
+            </div>
+            <img src="slides/slide3.jpg" style="width:100%" alt="">
+          </div>
+
+          <div class="slide-button">
+            <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+
+          <script>
+            var slideIndex=1;
+            showDivs(slideIndex);
+
+            function plusDivs(n){
+              showDivs(slideIndex +=n);
+            }
+
+            function showDivs(n){
+              var i;
+              var x = document.getElementsByClassName("myslides");
+              if (n > x.length){slideIndex = 1}
+              if (n < 1){slideIndex = x.length}
+              for (i = 0; i < x.length; i++){x[i].style.display = "none";}
+              x[slideIndex-1].style.display = "block";
+            }
+
+          </script>
+        </div>
+      </div>
+
+        <!---Right Column------->
+      <div class="content-right">
+        <div class="box-interest box-shadow">
+          <h4>Interest</h4>
+          <p>
+            <span class="color1">Aviation</span>
+            <span class="color2">Engineering</span>
+            <span class="color3">BigData</span>
+            <span class="color4">Analyst</span>
+            <span class="color5">WebDesign</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
